@@ -21,9 +21,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <div className="h-8 w-8 rounded-md bg-gradient-teal flex items-center justify-center shadow-glow">
-            <span className="text-white font-bold">O</span>
+            <span className="text-white font-bold">B</span>
           </div>
-          <span className="font-bold text-xl text-white">Omnify</span>
+          <span className="font-bold text-xl text-white">BPOptima</span>
         </Link>
         
         {/* Desktop Navigation */}

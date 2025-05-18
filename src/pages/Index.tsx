@@ -25,7 +25,7 @@ const Index = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                Omnify helps BPO teams automate complex workflows, reduce costs, and deliver better client outcomes with AI-powered automation.
+                BPOptima helps BPO teams automate complex workflows, reduce costs, and deliver better client outcomes with AI-powered automation.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -51,7 +51,7 @@ const Index = () => {
               <div className="glass-card rounded-2xl shadow-xl overflow-hidden border border-dark-300/20">
                 <img 
                   src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
-                  alt="Omnify Dashboard" 
+                  alt="BPOptima Dashboard" 
                   className="w-full rounded-t-lg"
                 />
                 <div className="p-6 bg-gradient-to-b from-dark-400/80 to-dark-700/80">
@@ -89,7 +89,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">The Complete BPO Automation Platform</h2>
-            <p className="text-lg text-gray-300">Omnify brings together all the tools you need to automate complex workflows and drive measurable outcomes.</p>
+            <p className="text-lg text-gray-300">BPOptima brings together all the tools you need to automate complex workflows and drive measurable outcomes.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -155,7 +155,7 @@ const Index = () => {
             <div className="relative z-10 max-w-2xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your BPO operations?</h2>
               <p className="text-lg text-gray-300 mb-8">
-                Join industry leaders who have reduced costs by 40% and improved client satisfaction scores by implementing Omnify's automation platform.
+                Join industry leaders who have reduced costs by 40% and improved client satisfaction scores by implementing BPOptima's automation platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-gradient-teal hover:opacity-90 text-white">
@@ -177,9 +177,9 @@ const Index = () => {
             <div className="mb-8 md:mb-0">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="h-8 w-8 rounded-md bg-gradient-teal flex items-center justify-center">
-                  <span className="text-white font-bold">O</span>
+                  <span className="text-white font-bold">B</span>
                 </div>
-                <span className="font-bold text-xl text-white">Omnify</span>
+                <span className="font-bold text-xl text-white">BPOptima</span>
               </div>
               <p className="text-gray-400 max-w-xs">
                 The complete BPO automation platform that delivers real business outcomes.
@@ -218,7 +218,7 @@ const Index = () => {
           
           <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Omnify. All rights reserved.
+              &copy; {new Date().getFullYear()} BPOptima. All rights reserved.
             </p>
             <div className="flex space-x-6">
               {['Twitter', 'LinkedIn', 'GitHub', 'YouTube'].map(item => (
