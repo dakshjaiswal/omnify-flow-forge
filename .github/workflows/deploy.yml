@@ -15,7 +15,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: production  # <-- Make sure this matches your environment name
+    environment: production  # Make sure your secrets are in this environment
 
     steps:
       - name: Checkout code
@@ -28,8 +28,16 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Build and Deploy
+      - name: Install dependencies and build
         run: |
-          npm install
+          npm ci
           npm run build
-          aws s3 cp ./build s3://bpoptima/ --recursive
+
+      - name: Deploy to S3
+        run: |
+          if [ -d "./dist" ]; then
+            aws s3 cp ./dist s3://bpoptima/ --recursive
+          else
+            echo "Build directory 'dist/' not found!" >&2
+            exit 1
+          fi
